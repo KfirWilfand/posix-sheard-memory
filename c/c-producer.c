@@ -14,10 +14,10 @@ int main() {
     int fd;
     void *pSharedMemory = NULL;
     struct param_struct params;
-    printf("1");
+    
 
     read_params(&params);
-printf("2");
+
     // get a handle to the shared memory
     fd = shm_open(params.shared_memory_name, O_RDWR, params.permissions);
         
