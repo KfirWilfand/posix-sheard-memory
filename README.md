@@ -20,6 +20,13 @@ python3 python-producer.py
 ### Compile & Run
 ```bash
 cd c
+gcc c-producer.c utils.c utils.h -lrt
+./a.out
+```
+
+Note: for macOS the linker is redudent, compile without -lrt:
+```bash
+cd c
 gcc c-producer.c utils.c utils.h
 ./a.out
 ```
